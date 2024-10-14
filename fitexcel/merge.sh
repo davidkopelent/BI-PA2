@@ -1,0 +1,37 @@
+echo "#ifndef __PROGTEST__" > all_in_one.cpp
+echo "#include <cstdlib>" >> all_in_one.cpp
+echo "#include <cstdio>" >> all_in_one.cpp
+echo "#include <cstring>" >> all_in_one.cpp
+echo "#include <cctype>" >> all_in_one.cpp
+echo "#include <climits>" >> all_in_one.cpp
+echo "#include <cfloat>" >> all_in_one.cpp
+echo "#include <cassert>" >> all_in_one.cpp
+echo "#include <cmath>" >> all_in_one.cpp
+echo "#include <iostream>" >> all_in_one.cpp
+echo "#include <sstream>" >> all_in_one.cpp
+echo "#include <fstream>" >> all_in_one.cpp
+echo "#include <iomanip>" >> all_in_one.cpp
+echo "#include <string>" >> all_in_one.cpp
+echo "#include <array>" >> all_in_one.cpp
+echo "#include <vector>" >> all_in_one.cpp
+echo "#include <list>" >> all_in_one.cpp
+echo "#include <set>" >> all_in_one.cpp
+echo "#include <map>" >> all_in_one.cpp
+echo "#include <stack>" >> all_in_one.cpp
+echo "#include <queue>" >> all_in_one.cpp
+echo "#include <unordered_set>" >> all_in_one.cpp
+echo "#include <unordered_map>" >> all_in_one.cpp
+echo "#include <memory>" >> all_in_one.cpp
+echo "#include <algorithm>" >> all_in_one.cpp
+echo "#include <functional>" >> all_in_one.cpp
+echo "#include <iterator>" >> all_in_one.cpp
+echo "#include <stdexcept>" >> all_in_one.cpp
+echo "#include <variant>" >> all_in_one.cpp
+echo "#include <optional>" >> all_in_one.cpp
+echo "#include <compare>" >> all_in_one.cpp
+echo "#include <charconv>" >> all_in_one.cpp
+echo "#include <span>" >> all_in_one.cpp
+echo "#include <utility>" >> all_in_one.cpp
+echo "#include \"expression.h\"" >> all_in_one.cpp
+grep -vhE '^(#include|#ifndef)' cell.h >> all_in_one.cpp
+grep -vh '^#include' builder.h spreadsheet.h cell.cpp builder.cpp spreadsheet.cpp test.cpp >> all_in_one.cpp
