@@ -1,6 +1,6 @@
 # Programming and Algorithms 2
 
-This repository contains my homework assignments and practice exercises for the course **Programming and Algorithms 2**. The course focuses on the basics of object-oriented programming (OOP) and the implementation of abstract data types.
+This repository contains my homework assignments and practice exercises for the course **Programming and Algorithms 2** at [FIT CTU](https://fit.cvut.cz/en). The course focuses on the basics of object-oriented programming (OOP) and the implementation of abstract data types.
 
 ## 📖 Course Syllabus
 ### **Main Topics**
